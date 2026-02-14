@@ -1,7 +1,0 @@
-{
-	"nodes":[
-		{"id":"25a939f0c42e660b","x":40,"y":-400,"width":480,"height":400,"type":"text","text":"# General Requirements\n\n- Should simplify creating tasks\n\t- Reduce having to create exhaustive lists\n- Should automatically handle timing \n\t- Aids with ADHD and losing focus creating schedules\n\t- Creating a queue-like system of tasks?\n- Should be modular and scalable\n- Should be simple and lightweight"},
-		{"id":"8822722c7c32bc70","type":"file","file":"design_doc.md","x":-340,"y":-400,"width":300,"height":280}
-	],
-	"edges":[]
-}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"25a939f0c42e660b","type":"text","text":"# General Requirements\n\n- Should simplify creating tasks\n\t- Reduce having to create exhaustive lists\n- Should automatically handle timing \n\t- Aids with ADHD and losing focus creating schedules\n- Should be modular and scalable\n- Should be simple and lightweight\n\n# Ideas\n\n- On-screen clocks, even when minimized\n\t- Custom UI\n- Creating a queue-like system of tasks?\n-  Set major goals and then subgoals for immediate completion","x":40,"y":-400,"width":480,"height":540},
+		{"id":"8822722c7c32bc70","type":"file","file":"project_planning/design_doc.md","x":-340,"y":-400,"width":300,"height":280}
+	],
+	"edges":[
+		{"id":"574232f3dc4f3065","fromNode":"8822722c7c32bc70","fromSide":"right","toNode":"25a939f0c42e660b","toSide":"left","toEnd":"none"}
+	]
+}

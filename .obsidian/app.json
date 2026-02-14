@@ -1,1 +1,8 @@
-{}
+{
+  "livePreview": true,
+  "strictLineBreaks": true,
+  "showLineNumber": false,
+  "userIgnoreFilters": [
+    "project_planning/project_notebook/notebook_templates/"
+  ]
+}
