@@ -11,17 +11,31 @@
             "id": "6f27c5ae58de644a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "a58c6e8a9465b9a3",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "brainstorm_canvas.canvas",
+                "viewState": {
+                  "x": 90,
+                  "y": -200,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-layout-dashboard",
+              "title": "brainstorm_canvas"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,6 +197,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "6f27c5ae58de644a",
-  "lastOpenFiles": []
+  "active": "a58c6e8a9465b9a3",
+  "lastOpenFiles": [
+    "README.md",
+    "design_doc.md",
+    "brainstorm_canvas.canvas"
+  ]
 }
