@@ -8,7 +8,8 @@
 | ------- | ----------------------------------------------------------------------------------------------------- | ---------------- | --------------- | ---------- |
 | 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)               | #notebook        | 0.0.0           | 2026-02-14 |
 | 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                           | #time_management | 0.0.0           | 2026-02-14 |
-| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document) | #planning        | 0.0.0           | 2026-02-15 |
+| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document) | #organization    | 0.0.0           | 2026-02-15 |
+| 4       | [Planning System Organization](#planning-system-organization)                                         | #planning        | 0.0.0           | 2026-02-15 |
 
 ----
 
@@ -92,7 +93,7 @@ The final timeline is as follows:
 
 ## Re-Evaluating the Necessity of a Design Document
 
-### #planning
+### #organization
 
 Entry: 3<br>Author: Aster Lee<br>Date: 2026-02-15<br>Working Version: 0.0.0
 
@@ -116,3 +117,59 @@ After some time and sleep, I've questioned how useful a design document is for m
 |                                                        | Spreads my attention and focus too thin across several tasks |
 
 After consideration, ***I have decided I will not move forwards with design documents.*** The benefits of removing them from my workload outweigh the potential benefits of maintaining them.
+
+The timeline established in the previous entry must be revised. The revised timeline is as follows:
+
+| Week | Dates        | Tasks to Be Completed                                                                                   |
+| :--- | :----------- | ------------------------------------------------------------------------------------------------------- |
+| 1    | 2-14 to 2-21 | Notebook basics, begin brainstorming, create mockups, diagram prototypes                                |
+| 2    | 2-22 to 2-28 | Finish brainstorming, create formal plans, draft pseudocode, UML diagrams, finalize system architecture |
+| 3    | 3-01 to 3-06 | Finalize plans and system structure. Identify necessary libraries, subsystems, helper functions, etc.   |
+
+----
+
+## Planning System Organization
+
+### #planning
+
+Entry: 4<br>Author: Aster Lee<br>Date: 2026-02-15<br>Working Version: 0.0.0
+
+### Goal: Brainstorm ideas and details for system organization in order to create a stronger plan for how the application will be developed.
+
+### Ideation and Brainstorming
+
+Before any system organization can begin, I must first consider what I need to implement into this program. Brainstorming involves considering any and all ideas that may be relevant to the overall design. Extraneous or unimportant ideas can be culled later on in the process. 
+
+The most important considerations have been listed below.
+
+- **Usage of the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)**
+	- Studies have reinforced effectiveness for productivity
+- **Hierarchy of tasks**
+	- Smaller tasks contribute to greater tasks which contribute to completion of an overall goal
+	- Combines with Pomodoro. User focuses on a small task to chip away at the bigger picture
+- **Simple interface**
+	- Several testimonies cite confusing/unappealing UI as a turn-off for some programs
+	- Clean presentation, drag-and-drop controls, etc.
+	- Focused approach rather than information overload
+- **A prioritization system**
+	- People with ADHD struggle to prioritize (empirical findings and personal experience)
+	- Consider factors of immediateness and importance ([Eisenhower Matrix](https://en.wikipedia.org/wiki/Priority_Matrix))
+- **Written reflections upon task/goal completion**
+	- Could promote mindfulness and help to constructively improve habits. 
+
+With these basic ideas, I created a rudimentary UML diagram to imagine how the final program might be structured. This diagram was created to be a prototype rather than any official plan. 
+
+Creating a preliminary mockups such as this promotes more thoughtful design and can highlight potential weak points in the proposed design. 
+
+![*Fig. 1. Prototype UML diagram depicting the interactions between different sections of the application.](./photos/2026-02-15_uml_prototype.png)
+
+The above diagram depicts the general concept for the application. 
+
+- The `meadow` file exists to manage all of the interacting objects. Its sole purpose is to organize and initialize all necessary components.
+- The `user` class will contain all necessary information relating to the user. Its data will be saved to JSON databases, chosen for their balance between readability and speed.
+	- These databases will also save the configuration data utilized by the `meadow` file.
+	- `user` also contains instances of `goal` and `task`, which naturally are the goals and tasks associated with the user.
+		- The data associated with these instances will be saved into the user's corresponding JSON file
+- The `goal` class exists as both a template for its child `task` class, but also to act as its own object. `goal` instances contain all relevant information for tracking their progress.
+	- `goal` instances aggregate `tasks` as instance variables. This will allow for logical separation and clearly indicates which tasks work towards which goals.
+- The `task` class is a child of `goal`. In its current iteration, it shares all attributes with its parent. I plan for there to be more differentiation between the two, thus justifying it being separate.
