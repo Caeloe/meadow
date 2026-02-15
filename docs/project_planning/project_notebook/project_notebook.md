@@ -4,16 +4,17 @@
 
 ## Table of Contents
 
-| Entry # | Entry Title                                                                             | Category Tag           | Working Version | Date       |
-| ------- | --------------------------------------------------------------------------------------- | ---------------------- | --------------- | ---------- |
-| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook) | #notebook/introduction | 0.0.0           | 2026-02-14 |
-| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)             | #time_management       | 0.0.0           | 2026-02-14 |
+| Entry # | Entry Title                                                                                           | Category Tag     | Working Version | Date       |
+| ------- | ----------------------------------------------------------------------------------------------------- | ---------------- | --------------- | ---------- |
+| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)               | #notebook        | 0.0.0           | 2026-02-14 |
+| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                           | #time_management | 0.0.0           | 2026-02-14 |
+| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document) | #planning        | 0.0.0           | 2026-02-15 |
 
 ----
 
 ## Understanding and Navigating the Notebook
 
-### #notebook/introduction
+### #notebook
 
 Entry: 1
 Author: Aster Lee<br>Date: 2026-02-14<br>Working Version: 0.0.0
@@ -33,7 +34,7 @@ Author: Aster Lee<br>Date: 2026-02-14<br>Working Version: 0.0.0
 
 **All entries will share the same heading as follows:**
 
-![*Fig. 1.*](photos/2026-02-14_template_image.png)
+![*Fig. 1.*](./photos/2026-02-14_template_image.png)
 
 * *Title* - Title of entry. Gives a specific description or focus for the entry
 * *Subtitle Tag* - A subtitle that categorizes the entry into broader categories of similar entries. Takes advantage of Obsidian's tag system to easily organize and search for items.
@@ -41,7 +42,7 @@ Author: Aster Lee<br>Date: 2026-02-14<br>Working Version: 0.0.0
 * *Date* - Provides date entry was written.
 * *Working version* - Indicates which version of the project the entry was working on. Follows standard [semantic versioning convention.](https://semver.org/)
 
-## Rationale for Selecting Obsidian as a Text Editor
+### Rationale for Selecting Obsidian as a Text Editor
 
 - **Obsidian is a strong tool for organization and workflow management.**
 	- Its links, backlinks, tags, and graph view all contribute to a strongly organized system that improves workflow.
@@ -69,12 +70,15 @@ Entry: 2<br>Author: Aster Lee<br>Date: 2026-02-14<br>Working Version: 0.0.0
 - [x] Goal addresses what work will contribute towards.
 
 Having a strict, yet realistic goal such as this will help to motivate me. This will ensure I'm keeping a strong pace while not overworking myself. A date of March 6 will give me 20 days, which should be more than enough to get ready even with the busy schedule I keep.
+
 ### Creating Project Timeline
 
-Given my busy nature as an honors student, the approach I will take to time management will deviate from typical project timelines.
+Given my busy nature as an honors student, the approach I will take to time management will deviate from typical project timelines:
 
 - Task progress will be divided into weeks.
 - Each week will have a certain set of criteria that must be met by its end.
+
+This was done to provide myself with extra flexibility. I cannot guarantee that I will always have free time to work on the project, so my plans must be able to adapt to my schedule as needed.
 
 The final timeline is as follows:
 
@@ -83,3 +87,32 @@ The final timeline is as follows:
 | 1    | 2-14 to 2-21 | Notebook basics, begin brainstorming, create mockups                                                    |
 | 2    | 2-22 to 2-28 | Finish brainstorming, create formal plans, draft pseudocode, UML diagrams, finalize system architecture |
 | 3    | 3-01 to 3-06 | Finish design document in totality, finalize plans and system structure                                 |
+
+----
+
+## Re-Evaluating the Necessity of a Design Document
+
+### #planning
+
+Entry: 3<br>Author: Aster Lee<br>Date: 2026-02-15<br>Working Version: 0.0.0
+
+### Why reconsider?
+
+After some time and sleep, I've questioned how useful a design document is for my purposes.
+
+- **Design documents are useful for planning complete projects and laying out all necessary steps.**
+	- My project will be far more iterative and experimental. I'm not aiming to create a final product just yet.
+- **Utilizing design documents means I'll likely have to create one for every major iteration of this application. This seems untimely.**
+
+### Weighing Pros and Cons of Design Documents
+
+| Pros                                                   | Cons                                                         |
+| ------------------------------------------------------ | ------------------------------------------------------------ |
+| Encourages thoughtful designing and planning           | Requires heavy time investment                               |
+| Leave little ambiguity for implementation              | I am unlikely to cooperate on this project                   |
+| Thorough and robust: final product likely to be stable | Each major iteration will require a new design document      |
+| Important skill for professional development           | Tedious. Could induce burnout or fatigue                     |
+| Beneficial for cooperation                             | Design notebook fulfills many similar roles of design doc    |
+|                                                        | Spreads my attention and focus too thin across several tasks |
+
+After consideration, ***I have decided I will not move forwards with design documents.*** The benefits of removing them from my workload outweigh the potential benefits of maintaining them.

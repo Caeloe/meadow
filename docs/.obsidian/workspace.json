@@ -11,17 +11,14 @@
             "id": "ac4ba0e112102f00",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "project_planning/brainstorm.canvas",
-                "viewState": {
-                  "x": 90,
-                  "y": -130,
-                  "zoom": 0
-                }
+                "file": "docs/project_planning/project_notebook/project_notebook.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "brainstorm"
+              "icon": "lucide-file",
+              "title": "project_notebook"
             }
           }
         ]
@@ -189,26 +186,27 @@
   },
   "active": "ac4ba0e112102f00",
   "lastOpenFiles": [
-    "project_planning/design_doc.md",
-    "project_planning/brainstorm.canvas",
-    "project_planning/project_notebook/project_notebook.md",
-    "project_planning/project_notebook/notebook_templates/standard_entry_template.md",
+    "docs/project_planning/brainstorm.canvas",
+    "docs/project_planning/project_notebook/project_notebook.md",
+    "docs/project_planning/design_doc.md",
+    "docs/project_planning/project_notebook/notebook_templates/standard_entry_template.md",
+    "docs/README.md",
+    "docs",
+    "docs/project_planning/project_notebook/photos/2026-02-14_template_image.png",
+    "Untitled.md",
     "2.md",
     "Creating Goals and Project Timeline.md",
-    "project_planning/project_notebook/photos/2026-02-14_template_image.png",
     "project_planning/project_notebook/entry_drafts/2026-02-14.md",
     "project_planning/project_notebook/table_of_contents.md",
     "Untitled.base",
     "photos.md",
-    "README.md",
     "project_planning/project_notebook/notebook_templates/standard_entry_template 1.md",
-    "project_planning/project_notebook/photos",
-    "project_planning",
-    "project_planning/project_notebook/entry_drafts",
+    "docs/project_planning/project_notebook/photos",
+    "docs/project_planning",
+    "docs/project_planning/project_notebook/entry_drafts",
     "project_notebook/2026-02-14.md",
-    "Untitled.md",
-    "project_planning/project_notebook/notebook_templates",
-    "project_planning/project_notebook",
+    "docs/project_planning/project_notebook/notebook_templates",
+    "docs/project_planning/project_notebook",
     "project_notebook.md",
     "notebook/table_of_contents.md",
     "meadow_project_notebook.md",
