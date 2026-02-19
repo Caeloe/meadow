@@ -10,7 +10,7 @@
 | 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                                   | #time_management | 0.0.0           | 2026-02-14 |
 | 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document)         | #organization    | 0.0.0           | 2026-02-15 |
 | 4       | [Planning System Organization](#planning-system-organization)                                                 | #planning        | 0.0.0           | 2026-02-15 |
-| 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process:-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
+| 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
 
 ----
 
