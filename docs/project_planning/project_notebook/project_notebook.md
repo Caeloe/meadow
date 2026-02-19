@@ -4,12 +4,13 @@
 
 ## Table of Contents
 
-| Entry # | Entry Title                                                                                           | Category Tag     | Working Version | Date       |
-| ------- | ----------------------------------------------------------------------------------------------------- | ---------------- | --------------- | ---------- |
-| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)               | #notebook        | 0.0.0           | 2026-02-14 |
-| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                           | #time_management | 0.0.0           | 2026-02-14 |
-| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document) | #organization    | 0.0.0           | 2026-02-15 |
-| 4       | [Planning System Organization](#planning-system-organization)                                         | #planning        | 0.0.0           | 2026-02-15 |
+| Entry # | Entry Title                                                                                                   | Category Tag     | Working Version | Date       |
+| ------- | ------------------------------------------------------------------------------------------------------------- | ---------------- | --------------- | ---------- |
+| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)                       | #notebook        | 0.0.0           | 2026-02-14 |
+| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                                   | #time_management | 0.0.0           | 2026-02-14 |
+| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document)         | #organization    | 0.0.0           | 2026-02-15 |
+| 4       | [Planning System Organization](#planning-system-organization)                                                 | #planning        | 0.0.0           | 2026-02-15 |
+| 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process:-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
 
 ----
 
@@ -173,3 +174,19 @@ The above diagram depicts the general concept for the application.
 - The `goal` class exists as both a template for its child `task` class, but also to act as its own object. `goal` instances contain all relevant information for tracking their progress.
 	- `goal` instances aggregate `tasks` as instance variables. This will allow for logical separation and clearly indicates which tasks work towards which goals.
 - The `task` class is a child of `goal`. In its current iteration, it shares all attributes with its parent. I plan for there to be more differentiation between the two, thus justifying it being separate.
+
+----
+
+## Continuing System Planning Process: Diagram Revision
+
+### #planning 
+
+Entry: 5<br>Author: Aster Lee<br>Date: 2026-02-18<br>Working Version: 0.0.0
+
+A new version of the UML diagram was created. This version is simplified from the previous iteration, removing the class attributes and methods from the diagram to return the focus towards organization. Details of implementation can come later.
+
+The most significant change made here was changing `task` from an inheritance of `goal` to a composition of `goal`. I learned of the potential drawbacks of relying upon inheritance, and determined that changing task to instead be a composition of goal was likely beneficial. Such a change ensures that changes to the parent don't cause any adverse effects to the child.
+
+The revised UML diagram is below.
+
+![*Fig. 1.*](./photos/2026-02-18-uml_prototype_2.png)

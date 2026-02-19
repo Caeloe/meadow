@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -184,12 +184,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "96004f660f45b247",
+  "active": "ac4ba0e112102f00",
   "lastOpenFiles": [
+    "project_planning/project_notebook/notebook_templates/standard_entry_template.md",
+    "project_planning/project_notebook/photos/2026-02-18-uml_prototype_2.png",
+    "project_planning/project_notebook/entry_drafts/2026-02-18.md",
+    "2026-02-18.md",
+    "project_planning/project_notebook/project_notebook.md",
     "project_planning/project_notebook/photos/2026-02-15_uml_prototype.png",
     "project_planning/project_notebook/entry_drafts/2026-02-15.md",
-    "project_planning/project_notebook/project_notebook.md",
-    "project_planning/project_notebook/notebook_templates/standard_entry_template.md",
     "project_planning/project_notebook/photos/2026-02-14_template_image.png",
     "project_planning/brainstorm.canvas",
     "README.md",
