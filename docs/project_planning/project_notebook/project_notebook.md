@@ -205,7 +205,7 @@ Entry: 6<br>Author: Aster Lee<br>Date: 2026-02-21<br>Working Version: 0.0.0
 
 Work was done to finalize the system's general layout. Considerations were made to balance system optimization, velocity, and versatility. In order to this, the system was first evaluated from a high level to identify the bare necessities.
 
-![*Fig. 1. A UML diagram depicting the system organization.](./photo/2026-02-21_uml_system_diagram,png)
+![*Fig. 1. A UML diagram depicting the system organization.](./photo/2026-02-21_uml_system_diagram.png)
 
 The above diagram is the culmination of the planning that was conducted over the course of the last week. The primary goal was simplify the system and organize as efficiently as possible.
 
