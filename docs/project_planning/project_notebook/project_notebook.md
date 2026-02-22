@@ -4,13 +4,14 @@
 
 ## Table of Contents
 
-| Entry # | Entry Title                                                                                                   | Category Tag     | Working Version | Date       |
-| ------- | ------------------------------------------------------------------------------------------------------------- | ---------------- | --------------- | ---------- |
-| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)                       | #notebook        | 0.0.0           | 2026-02-14 |
-| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                                   | #time_management | 0.0.0           | 2026-02-14 |
-| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document)         | #organization    | 0.0.0           | 2026-02-15 |
-| 4       | [Planning System Organization](#planning-system-organization)                                                 | #planning        | 0.0.0           | 2026-02-15 |
+| Entry # | Entry Title                                                                                                  | Category Tag     | Working Version | Date       |
+| ------- | ------------------------------------------------------------------------------------------------------------ | ---------------- | --------------- | ---------- |
+| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)                      | #notebook        | 0.0.0           | 2026-02-14 |
+| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                                  | #time_management | 0.0.0           | 2026-02-14 |
+| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document)        | #organization    | 0.0.0           | 2026-02-15 |
+| 4       | [Planning System Organization](#planning-system-organization)                                                | #planning        | 0.0.0           | 2026-02-15 |
 | 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
+| 6       | [Finalizing Broad System Planning](#finalizing-broad-system-planning)                                        | #planning        | 0.0.0           | 2026-02-21 |
 
 ----
 
@@ -27,6 +28,7 @@ Author: Aster Lee<br>Date: 2026-02-14<br>Working Version: 0.0.0
 	- Section links, external links, image embedding, and tables should all be in accordance with standard Markdown syntax.
 - **The table of contents contains hyperlinks for convenience.**
 	- Entry titles will be hyperlinked to direct the viewer to the corresponding entry.
+	- **For Obsidian users,** the vault will have bookmarks created for each entry.
 - **This document should be viewed in [Obsidian](https://obsidian.md/) for best results**
 	- While not vital to function, using Obsidian will provide additional functionality, such as usage of the graph view and functionality of the Tags system. 
 - **Some artifacts may appear in other Markdown viewers as a consequence of missing Obsidian functionality.**
@@ -190,3 +192,43 @@ The most significant change made here was changing `task` from an inheritance of
 The revised UML diagram is below.
 
 ![*Fig. 1.*](./photos/2026-02-18-uml_prototype_2.png)
+
+----
+
+## Finalizing Broad System Planning
+
+### #planning
+
+Entry: 6<br>Author: Aster Lee<br>Date: 2026-02-21<br>Working Version: 0.0.0
+
+### Finalizing General System Organization
+
+Work was done to finalize the system's general layout. Considerations were made to balance system optimization, velocity, and versatility. In order to this, the system was first evaluated from a high level to identify the bare necessities.
+
+![*Fig. 1. A UML diagram depicting the system organization.](./photo/2026-02-21_uml_system_diagram,png)
+
+The above diagram is the culmination of the planning that was conducted over the course of the last week. The primary goal was simplify the system and organize as efficiently as possible.
+
+- The entire system is organized into a namespace, which promotes intuitive organization and the ability to share common data throughout the related classes.
+- Almost all classes feed into the central `Meadow` file. This was creates a logical connection where processes are all encapsulated and abstracted on their own, then assembled into a functional program in a single file. This creates a simple, yet logically sound system.
+	- The natural tradeoff is that high amounts of abstraction increase the difficulty of debugging, low-level understanding, and issues with maintenance.
+- `User` is now only related to the `Meadow` file and the `Goal` and `Task` classes, which serves the earlier goal of stronger encapsulation and abstraction.
+- The `Goal` class is fundamentally unchanged, and is still composed by `User` as in previous iterations.
+- `Task` has returned as a child of `Goal`. While composition over iteration is good practice, `Goal` objects and `Task` objects are nearly identically logically. Practically, tasks can be considered to be a more specific type of goal, so defining them as children of `Goal` makes sense as well.
+- The three utility classes of `Timekeeper`, `Json_parser`, and `Gui_controller` are all important utilities accessed strictly by the `Meadow` file. These classes could also be implemented simply as namespace functions. My decision will come down to how practical it is to define them as classes in practice. For now, defining them as classes is fine organization-wise.
+
+### Beginning Details of Implementation
+
+With the broader details of organization in place, I created an implementation diagram to further refine how I will go about creating the application.
+
+The purpose of this diagram is not to perfectly represent how the application will be created, but to refine and guide the process of implementation.
+
+![*Fig. 2. An implementation UML diagram depicting the class attributes and methods of the system. Shown are the connections between classes and how data will interact.](./photos/2026-02-21_uml_implementation_diagram.png)
+
+The diagram shows the general structure for how the program will be organized.
+
+The diagram only shows select class attributes and methods, as many are either unnecessary to depict or difficult to predict in this early of a state.
+
+Important to note is the change from a `Gui_controller` to a `Ui_controller`. The reason behind this comes down to simplicity: creating graphical user interface is a daunting and challenging task. Creating the backend to support the UI before it is created is far more important. For the time being, the UI will be simplified into a terminal interface with command line controls. More effort in creating GUI will come later.
+
+Also important to note is the static nature of many of the utility classes' methods. As stated earlier, it could be more practical to define some of these utility methods as namespace functions. While namespaces simplify organization and reduce memory overhead, classes provide organized associations of data. My ultimate decision will come down to which is more practical to execute in practice. As it stands, they will remain classes.

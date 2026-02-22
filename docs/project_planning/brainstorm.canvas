@@ -3,7 +3,7 @@
 		{"id":"f8545c1e7d8cb532","type":"text","text":"","x":168,"y":-112,"width":250,"height":60},
 		{"id":"86bd7846147a6e2e","type":"text","text":"```\ng++ meadow.cpp -o meadow\n```","x":-400,"y":-400,"width":400,"height":80},
 		{"id":"25a939f0c42e660b","type":"text","text":"# General Requirements\n\n- Should simplify creating tasks\n\t- Reduce having to create exhaustive lists\n- Should automatically handle timing \n\t- Aids with ADHD and losing focus creating schedules\n- Should be modular and scalable\n- Should be simple and lightweight\n\n# Ideas\n\n- On-screen clocks, even when minimized\n\t- Custom UI\n\t- Interactivity/gamification?\n- Creating a queue-like system of tasks?\n-  Set major goals and then subgoals for immediate completion\n- Windows media control\n\t- Switching playlists, even?\n- Adjustable task and break length\n\t- Wait for confirmation before entering next timer\n- Reflection questions upon breaktime?","x":80,"y":-400,"width":480,"height":540},
-		{"id":"35e0be54582bcee6","x":-761,"y":-260,"width":722,"height":520,"type":"file","file":"project_planning/project_notebook/photos/2026-02-15_uml_prototype.png"}
+		{"id":"35e0be54582bcee6","type":"file","file":"project_planning/project_notebook/photos/2026-02-15_uml_prototype.png","x":-761,"y":-260,"width":722,"height":520}
 	],
 	"edges":[
 		{"id":"c96981eed274cdce","fromNode":"35e0be54582bcee6","fromSide":"right","toNode":"25a939f0c42e660b","toSide":"left"}

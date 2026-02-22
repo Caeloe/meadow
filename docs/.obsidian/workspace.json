@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#planning",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -184,17 +185,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "ac4ba0e112102f00",
+  "active": "9d893ca1a2f086b4",
   "lastOpenFiles": [
-    "project_planning/project_notebook/notebook_templates/standard_entry_template.md",
+    "project_planning/project_notebook/photos/2026-02-21_uml_implementation_diagram.png",
+    "project_planning/project_notebook/entry_drafts/Untitled.md",
+    "project_planning/project_notebook/photos/2026-02-21_uml_system_diagram.png",
+    "project_planning/project_notebook/photos/2026-02-14_template_image.png",
     "project_planning/project_notebook/photos/2026-02-18-uml_prototype_2.png",
+    "project_planning/project_notebook/photos/2026-02-15_uml_prototype.png",
+    "project_planning/project_notebook/project_notebook.md",
+    "project_planning/project_notebook/notebook_templates/standard_entry_template.md",
+    "project_planning/brainstorm.canvas",
     "project_planning/project_notebook/entry_drafts/2026-02-18.md",
     "2026-02-18.md",
-    "project_planning/project_notebook/project_notebook.md",
-    "project_planning/project_notebook/photos/2026-02-15_uml_prototype.png",
     "project_planning/project_notebook/entry_drafts/2026-02-15.md",
-    "project_planning/project_notebook/photos/2026-02-14_template_image.png",
-    "project_planning/brainstorm.canvas",
     "README.md",
     "docs/project_planning/brainstorm.canvas",
     "docs/project_planning/project_notebook/project_notebook.md",
