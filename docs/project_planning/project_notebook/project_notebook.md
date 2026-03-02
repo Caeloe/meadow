@@ -12,6 +12,7 @@
 | 4       | [Planning System Organization](#planning-system-organization)                                                | #planning        | 0.0.0           | 2026-02-15 |
 | 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
 | 6       | [Finalizing Broad System Planning](#finalizing-broad-system-planning)                                        | #planning        | 0.0.0           | 2026-02-21 |
+| 7       | [Evaluating Goal Progress](#evaluating-goal-progress)                                                        | #planning        | 0.0.0           | 2026-03-01 |
 
 ----
 
@@ -210,7 +211,7 @@ Work was done to finalize the system's general layout. Considerations were made 
 The above diagram is the culmination of the planning that was conducted over the course of the last week. The primary goal was simplify the system and organize as efficiently as possible.
 
 - The entire system is organized into a namespace, which promotes intuitive organization and the ability to share common data throughout the related classes.
-- Almost all classes feed into the central `Meadow` file. This was creates a logical connection where processes are all encapsulated and abstracted on their own, then assembled into a functional program in a single file. This creates a simple, yet logically sound system.
+- Almost all classes feed into the central `Meadow` file. This creates a logical connection where processes are all encapsulated and abstracted into neat units, then assembled into a functional program in a single file. This creates a simple, yet logically sound system.
 	- The natural tradeoff is that high amounts of abstraction increase the difficulty of debugging, low-level understanding, and issues with maintenance.
 - `User` is now only related to the `Meadow` file and the `Goal` and `Task` classes, which serves the earlier goal of stronger encapsulation and abstraction.
 - The `Goal` class is fundamentally unchanged, and is still composed by `User` as in previous iterations.
@@ -232,3 +233,16 @@ The diagram only shows select class attributes and methods, as many are either u
 Important to note is the change from a `Gui_controller` to a `Ui_controller`. The reason behind this comes down to simplicity: creating graphical user interface is a daunting and challenging task. Creating the backend to support the UI before it is created is far more important. For the time being, the UI will be simplified into a terminal interface with command line controls. More effort in creating GUI will come later.
 
 Also important to note is the static nature of many of the utility classes' methods. As stated earlier, it could be more practical to define some of these utility methods as namespace functions. While namespaces simplify organization and reduce memory overhead, classes provide organized associations of data. My ultimate decision will come down to which is more practical to execute in practice. As it stands, they will remain classes.
+
+----
+## Evaluating Goal Progress
+
+### #planning
+
+Entry: 7<br>Author: Aster Lee<br>Date: 2026-03-01<br>Working Version: 0.0.0
+
+### Measuring Current Progress
+
+- Unfortunately, last week was an extremely busy one for me. I had little time to make progress on the project
+- Fortunately, I was making progress much faster than anticipated. This means that this week has not set me behind schedule. Work can continue as planned
+- In fact, progress has been so swift, our goals may have to be re-evaluated to work on a shorter timeline. I may be able to begin true development sooner than anticipated
