@@ -13,6 +13,7 @@
 | 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
 | 6       | [Finalizing Broad System Planning](#finalizing-broad-system-planning)                                        | #planning        | 0.0.0           | 2026-02-21 |
 | 7       | [Evaluating Goal Progress](#evaluating-goal-progress)                                                        | #planning        | 0.0.0           | 2026-03-01 |
+| 8       | [Resuming Work on the Project](#resuming_work_on_the_project)                                                | #planning        | 0.0.0           | 2026-03-18 |
 
 ----
 
@@ -246,3 +247,37 @@ Entry: 7<br>Author: Aster Lee<br>Date: 2026-03-01<br>Working Version: 0.0.0
 - Unfortunately, last week was an extremely busy one for me. I had little time to make progress on the project
 - Fortunately, I was making progress much faster than anticipated. This means that this week has not set me behind schedule. Work can continue as planned
 - In fact, progress has been so swift, our goals may have to be re-evaluated to work on a shorter timeline. I may be able to begin true development sooner than anticipated
+
+----
+
+## Resuming Work on the Project
+
+### #planning 
+
+Entry: 8<br>Author: Aster Lee<br>Date: 2026-03-18<br>Working Version: 0.0.0
+
+### Addressing the Absence
+
+Unfortunately, due to an unforeseen spike in school workload, mental health issues, and other extenuating circumstances, I made the decision to step away from the project while I regained control of my highest priorities in life. 
+
+This was a hard decision, but I ultimately recognized that forcing myself to work on the project whilst in the middle of an extremely stressful period of life would do more harm than good for the project in the long run. It is for this reason that I return now.
+
+While this was difficult period for the project, it was not without its benefits and teaching moments, as the next section will evaluate.
+
+### Lessons Learned
+
+- While I was dealing with my mental health struggles, my lived experience and therapist provided me with new insights into improving control over executive function
+	- This information will help guide design choices for the project, such as the cue, habit, reward system
+		- The cue, habit, reward system is a model that states that habits can be controlled in individuals by manipulating the cues and rewards associated with certain actions, especially in ADHD patients
+- The stress I endured during this period also strongly signaled to me that I must reconsider my approach to time management for this project, and that something must change for work on it to be sustainable for my mental health
+	- I theorize that the week-long goals were a key culprit in exacerbating my issues
+		- In those who struggle with executive function, broad, vague, and long-term goals can quickly fall apart, as there is a lack of completion and satisfaction felt when attempting to work towards those goals
+		- Dividing work into shorter, more immediate, and specific goals can greatly aid in improving commitment and work ethic
+	- I will take this period in my life as an opportunity to learn from my shortcomings and better myself as a developer.
+
+### Moving Forwards
+
+- Now that I have somewhat returned to a sense of normalcy, it's important that I return to work in a strong manner. Stumbling early on could create a cascade of dying motivation.
+	- I will take the previously learned lessons to set better goals and improve my commitment to the project
+- While I missed several weeks of work, the planning that I had already completed was very comprehensive, and I feel that I am still in a very good position
+	- I also find that planning this project has dragged on for longer than anticipated. For this reason, I plan to begin real development in the near future.
