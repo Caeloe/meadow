@@ -13,7 +13,7 @@
 | 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
 | 6       | [Finalizing Broad System Planning](#finalizing-broad-system-planning)                                        | #planning        | 0.0.0           | 2026-02-21 |
 | 7       | [Evaluating Goal Progress](#evaluating-goal-progress)                                                        | #planning        | 0.0.0           | 2026-03-01 |
-| 8       | [Resuming Work on the Project](#resuming_work_on_the_project)                                                | #planning        | 0.0.0           | 2026-03-18 |
+| 8       | [Resuming Work on the Project](#resuming-work-on-the-project)                                                | #planning        | 0.0.0           | 2026-03-18 |
 
 ----
 
