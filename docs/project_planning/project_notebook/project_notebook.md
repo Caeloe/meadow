@@ -4,16 +4,17 @@
 
 ## Table of Contents
 
-| Entry # | Entry Title                                                                                                  | Category Tag     | Working Version | Date       |
-| ------- | ------------------------------------------------------------------------------------------------------------ | ---------------- | --------------- | ---------- |
-| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)                      | #notebook        | 0.0.0           | 2026-02-14 |
-| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                                  | #time_management | 0.0.0           | 2026-02-14 |
-| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document)        | #organization    | 0.0.0           | 2026-02-15 |
-| 4       | [Planning System Organization](#planning-system-organization)                                                | #planning        | 0.0.0           | 2026-02-15 |
-| 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning        | 0.0.0           | 2026-02-18 |
-| 6       | [Finalizing Broad System Planning](#finalizing-broad-system-planning)                                        | #planning        | 0.0.0           | 2026-02-21 |
-| 7       | [Evaluating Goal Progress](#evaluating-goal-progress)                                                        | #planning        | 0.0.0           | 2026-03-01 |
-| 8       | [Resuming Work on the Project](#resuming_work_on_the_project)                                                | #planning        | 0.0.0           | 2026-03-18 |
+| Entry # | Entry Title                                                                                                  | Category Tag               | Working Version | Date       |
+| ------- | ------------------------------------------------------------------------------------------------------------ | -------------------------- | --------------- | ---------- |
+| 1       | [Understanding and Navigating the Notebook](#understanding-and-navigating-the-notebook)                      | #notebook                  | 0.0.0           | 2026-02-14 |
+| 2       | [Creating Goals and Project Timeline](#creating-goals-and-project-timeline)                                  | #time_management           | 0.0.0           | 2026-02-14 |
+| 3       | [Re-Evaluating the Necessity of a Design Document](#re-evaluating-the-necessity-of-a-design-document)        | #organization              | 0.0.0           | 2026-02-15 |
+| 4       | [Planning System Organization](#planning-system-organization)                                                | #planning                  | 0.0.0           | 2026-02-15 |
+| 5       | [Continuing System Planning Process: Diagram Revision](#continuing-system-planning-process-diagram-revision) | #planning                  | 0.0.0           | 2026-02-18 |
+| 6       | [Finalizing Broad System Planning](#finalizing-broad-system-planning)                                        | #planning                  | 0.0.0           | 2026-02-21 |
+| 7       | [Evaluating Goal Progress](#evaluating-goal-progress)                                                        | #planning                  | 0.0.0           | 2026-03-01 |
+| 8       | [Resuming Work on the Project](#resuming_work_on_the_project)                                                | #planning #time_management | 0.0.0           | 2026-03-18 |
+| 9       | [Beginning Prototyping Process](#beginning-prototyping-process)                                              | #designing #planning       | 0.0.0           | 2026-03-18 |
 
 ----
 
@@ -252,7 +253,7 @@ Entry: 7<br>Author: Aster Lee<br>Date: 2026-03-01<br>Working Version: 0.0.0
 
 ## Resuming Work on the Project
 
-### #planning 
+### #planning #time_management
 
 Entry: 8<br>Author: Aster Lee<br>Date: 2026-03-18<br>Working Version: 0.0.0
 
@@ -281,3 +282,27 @@ While this was difficult period for the project, it was not without its benefits
 	- I will take the previously learned lessons to set better goals and improve my commitment to the project
 - While I missed several weeks of work, the planning that I had already completed was very comprehensive, and I feel that I am still in a very good position
 	- I also find that planning this project has dragged on for longer than anticipated. For this reason, I plan to begin real development in the near future.
+
+----
+
+## Beginning Prototyping Process
+
+### #designing #planning
+
+Entry: 9<br>Author: Aster Lee<br>Date: 2026-03-18<br>Working Version: 0.0.0
+
+### Planning the first Prototype
+
+- With the amount of planning that has been done, it is now possible to begin creating prototypes of the final application
+	- The diagrams and plans have outlined a clear framework for the overall program, and further planning seems unnecessary
+- Each prototype will focus on a certain aspect of the overall application, and every subsequent one will iteratively build upon the last
+	- Dividing work in this manner allows for a more focused approach, and one that can deliver small, yet consistent progress
+
+### Goals for the first Prototype
+
+- Should implement an iteration of the `task` and `goal` classes
+	- While not fully functional, classes should have most of their intended features, especially those that pertain to timekeeping
+- Should include basic interface to test and interact with classes
+	- Interface can be entirely based within the CLI
+- Should establish core framework for good practices, including encapsulation, abstraction, and debug resources such as logging
+- Is completed by **Friday, March 20 (2 days)**
