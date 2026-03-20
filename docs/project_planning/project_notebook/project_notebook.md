@@ -221,7 +221,7 @@ The above diagram is the culmination of the planning that was conducted over the
 - The three utility classes of `Timekeeper`, `Json_parser`, and `Gui_controller` are all important utilities accessed strictly by the `Meadow` file. These classes could also be implemented simply as namespace functions. My decision will come down to how practical it is to define them as classes in practice. For now, defining them as classes is fine organization-wise.
 
 ### Beginning Details of Implementation
-
+	-
 With the broader details of organization in place, I created an implementation diagram to further refine how I will go about creating the application.
 
 The purpose of this diagram is not to perfectly represent how the application will be created, but to refine and guide the process of implementation.
@@ -300,9 +300,9 @@ Entry: 9<br>Author: Aster Lee<br>Date: 2026-03-18<br>Working Version: 0.0.0
 
 ### Goals for the first Prototype
 
-- Should implement an iteration of the `task` and `goal` classes
+- Should implement an iteration of the `Task` and `Goal` classes
 	- While not fully functional, classes should have most of their intended features, especially those that pertain to timekeeping
 - Should include basic interface to test and interact with classes
 	- Interface can be entirely based within the CLI
 - Should establish core framework for good practices, including encapsulation, abstraction, and debug resources such as logging
-- Is completed by **Friday, March 20 (2 days)**
+- Is completed by **the end of Friday, March 20 (2 days)**
