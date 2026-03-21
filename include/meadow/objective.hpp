@@ -14,15 +14,23 @@ namespace Meadow {
 
     class Objective {
         public:
+            /**
+             * Constructor/Destructor
+             */
+
+            Objective();
+            Objective(const Objective& other);
+            Objective(Objective&& other);
+
             static constexpr std::chrono::year_month_day INVALID_DATE{
                 std::chrono::year{0}, 
                 std::chrono::month{0}, 
                 std::chrono::day{0}
             };
 
-            static Objective make_objective(uint32_t id);
-            static Objective make_objective(uint32_t id, const Objective& other);
-            static Objective make_objective(uint32_t id, Objective&& other) noexcept;
+            static Objective make_objective();
+            static Objective make_objective(const Objective& other);
+            static Objective make_objective(Objective&& other);
 
             /**
              * Getters
@@ -32,6 +40,7 @@ namespace Meadow {
             static uint32_t get_max_goal_length();
             static uint32_t get_max_description_length();
 
+            uint32_t get_id();
             std::string get_name();
             std::string get_goal();
             std::string get_description();
@@ -49,6 +58,7 @@ namespace Meadow {
             static void set_max_goal_length(uint32_t max_goal_length);
             static void set_max_description_length(uint32_t max_description_length);
 
+            Objective& set_id(uint32_t id);
             Objective& set_name(std::string name);
             Objective& set_goal(std::string goal);
             Objective& set_description(std::string description);
@@ -63,7 +73,9 @@ namespace Meadow {
              */
 
             Objective& operator=(const Objective& other);
-            Objective& operator=(Objective&& other) noexcept;
+            Objective& operator=(Objective&& other);
+            bool operator<(const Objective& other);
+            bool operator>(const Objective& other);
 
             /**
              * Util Methods
@@ -84,15 +96,5 @@ namespace Meadow {
             uint32_t priority, session_tally;
             std::chrono::year_month_day date_created, deadline;
             enum Objective_Type type;
-
-            /**
-             * Constructor/Destructor
-             */
-
-            Objective(uint32_t id);
-            Objective(uint32_t id, const Objective& other);
-            Objective(uint32_t id, Objective&& other) noexcept;
-
-            ~Objective();
     };
 }

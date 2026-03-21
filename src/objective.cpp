@@ -3,6 +3,7 @@
 #include <string>
 #include <chrono>
 #include <cstdint>
+#include <iostream>
 
 using namespace Meadow;
 
@@ -10,85 +11,27 @@ using namespace Meadow;
  * Static instantiation method
  */
 
-Objective Objective::make_objective(uint32_t id) {
-    return Objective(id);
+Objective Objective::make_objective() {
+    return Objective();
 }
 
-Objective Objective::make_objective(uint32_t id, const Objective& other) {
-    return Objective(id, other);
+Objective Objective::make_objective(const Objective& other) {
+    return Objective(other);
 }
 
-Objective Objective::make_objective(uint32_t id, Objective&& other) noexcept {
-    return Objective(id, other);
+Objective Objective::make_objective(Objective&& other) {
+    return Objective(other);
 }
 
 /**
  * Constructors/Destructor
  */
 
-Objective::Objective(uint32_t id) : 
-    id(id),
-    name(nullptr),
-    goal(nullptr),
-    description(nullptr),
+Objective::Objective() = default;
 
-    priority(0),
-    session_tally(0),
+Objective::Objective(const Objective& other) = default;
 
-    date_created(
-        std::chrono::floor<std::chrono::days>(std::chrono::system_clock::now())
-    ),
-    deadline(INVALID_DATE),
-
-    type(AMBIGUOUS)
-{
-}
-
-Objective::Objective(uint32_t id, const Objective& other) :
-    id(other.id),
-    name(other.name),
-    goal(other.goal),
-    description(other.description),
-
-    priority(other.priority),
-    session_tally(other.session_tally),
-
-    date_created(other.date_created),
-    deadline(other.deadline),
-
-    type(other.type)
-{
-}
-
-Objective::Objective(uint32_t id, Objective&& other) noexcept :
-    id(other.id),
-    name(other.name),
-    goal(other.goal),
-    description(other.description),
-
-    priority(other.priority),
-    session_tally(other.session_tally),
-
-    date_created(other.date_created),
-    deadline(other.deadline),
-
-    type(other.type)
-{
-    other.name = nullptr;
-    other.goal = nullptr;
-    other.description = nullptr;
-
-    other.priority = 0;
-    other.session_tally = 0;
-
-    other.date_created = INVALID_DATE;
-    other.deadline = INVALID_DATE;
-
-    other.type = AMBIGUOUS;
-}
-
-Objective::~Objective() {
-}
+Objective::Objective(Objective&& other) = default;
 
 /**
  * Getters
@@ -104,6 +47,10 @@ uint32_t Objective::get_max_goal_length() {
 
 uint32_t Objective::get_max_description_length() {
     return max_description_length;
+}
+
+uint32_t Objective::get_id() {
+    return this->id;
 }
 
 std::string Objective::get_name() {
@@ -154,6 +101,11 @@ void Objective::set_max_description_length(uint32_t max_description_length) {
     Objective::max_description_length = max_description_length;
 }
 
+Objective& Objective::set_id(uint32_t id) {
+    this->id = id;
+    return *this;
+}
+
 Objective& Objective::set_name(std::string name) {
     this->name = name;
     return *this;
@@ -198,56 +150,16 @@ Objective& Objective::set_type(enum Objective_Type type) {
  * Operators
  */
 
-Objective& Objective::operator=(const Objective& other) {
-    if (this != &other) {
-        this->id = other.id;
+Objective& Objective::operator=(const Objective& other) = default;
 
-        this->name = other.name;
-        this->goal = other.goal;
-        this->description = other.description;
+Objective& Objective::operator=(Objective&& other) = default;
 
-        this->priority = other.priority;
-        this->session_tally = other.session_tally;
-
-        this->date_created = other.date_created;
-        this->deadline = other.deadline;
-
-        this->type = other.type;
-    }
-
-    return *this;
+bool Objective::operator<(const Objective& other) {
+    return (this->id < other.id) ? true : false;
 }
 
-Objective& Objective::operator=(Objective&& other) noexcept {
-    if (this != &other) {
-        this->id = other.id;
-
-        this->name = other.name;
-        this->goal = other.goal;
-        this->description = other.description;
-
-        this->priority = other.priority;
-        this->session_tally = other.session_tally;
-
-        this->date_created = other.date_created;
-        this->deadline = other.deadline;
-
-        this->type = other.type;
-        
-        other.name = nullptr;
-        other.goal = nullptr;
-        other.description = nullptr;
-
-        other.priority = 0;
-        other.session_tally = 0;
-
-        other.date_created = INVALID_DATE;
-        other.deadline = INVALID_DATE;
-
-        other.type = AMBIGUOUS;
-    }
-
-    return *this;
+bool Objective::operator>(const Objective& other) {
+    return (this->id > other.id) ? true : false;
 }
 
 /**
